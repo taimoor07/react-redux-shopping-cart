@@ -1,17 +1,18 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
 import {
   AppBar,
   Toolbar,
   Typography,
-  Button,
+  makeStyles,
   IconButton
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
+import AddShoppingCartIcon from "@material-ui/icons/AddShoppingCart";
 
 const useStyles = makeStyles(theme => ({
   root: {
-    flexGrow: 1
+    flexGrow: 1,
+    marginBottom: "75px"
   },
   menuButton: {
     marginRight: theme.spacing(2)
@@ -26,7 +27,7 @@ export default function NavBar() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar style={{ backgroundColor: "#568203" }} position="fixed">
         <Toolbar>
           <IconButton
             edge="start"
@@ -37,9 +38,9 @@ export default function NavBar() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
-            News
+            Products
           </Typography>
-          <Button color="inherit">Login</Button>
+          <AddShoppingCartIcon></AddShoppingCartIcon>
         </Toolbar>
       </AppBar>
     </div>
