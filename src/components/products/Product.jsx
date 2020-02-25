@@ -9,6 +9,8 @@ import {
   CardActions,
   Typography
 } from "@material-ui/core";
+import AddCircleOutlineIcon from "@material-ui/icons/AddCircleOutline";
+import RemoveCircleOutlineIcon from "@material-ui/icons/RemoveCircleOutline";
 
 const styles = {
   productImage: {
@@ -51,12 +53,16 @@ function Product(props) {
                     </Typography>
                   </CardContent>
                   <CardActions disableSpacing style={styles.cardActions}>
-                    <Button
-                      variant="outlined"
-                      color="primary"
-                      style={styles.cartButton}
-                    >
+                    <Button variant="outlined" style={styles.cartButton}>
+                      <RemoveCircleOutlineIcon
+                        onClick={event =>
+                          props.removeFromCart(product.id, event)
+                        }
+                      ></RemoveCircleOutlineIcon>
                       Add to cart
+                      <AddCircleOutlineIcon
+                        onClick={event => props.addToCart(product.id, event)}
+                      ></AddCircleOutlineIcon>
                     </Button>
                   </CardActions>
                 </Card>

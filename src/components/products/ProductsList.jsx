@@ -11,7 +11,8 @@ class ProductsList extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      products: []
+      products: [],
+      cart: []
     };
   }
 
@@ -25,11 +26,48 @@ class ProductsList extends Component {
     });
   };
 
+  addToCart = id => {
+    let { products, cart } = this.state;
+    let product = products.filter(item => item.id === id);
+
+    if (product.length !== 0) {
+      if (cart.some(el => el.id === id)) {
+        cart.map(el => {
+          if (el.id === id) el.quantity += 1;
+        });
+      } else {
+        product[0].quantity = 1;
+        cart.push(product[0]);
+      }
+    }
+  };
+
+  removeFromCart = id => {
+    let { cart } = this.state;
+    if (cart.length !== 0) {
+      if (cart.some(el => el.id === id)) {
+        cart.map((el, index) => {
+          if (el.id === id && el.quantity > 1) {
+            el.quantity -= 1;
+          } else {
+            cart.splice(index, 1);
+          }
+        });
+      }
+    }
+  };
+
   render() {
+    let { products } = this.state;
+
     return (
       <Container fixed>
         <Box component="div" style={styles.productsList}>
-          <Product products={this.state.products}></Product>
+          <Product
+            products={products}
+            addToCart={this.addToCart}
+            removeFromCart={this.removeFromCart}
+          ></Product>
         </Box>
       </Container>
     );
