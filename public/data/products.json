@@ -1,0 +1,64 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "White Dinner Plate",
+      "price": 0.75,
+      "img": "https://cdn11.bigcommerce.com/s-zg66sl1pxk/images/stencil/1280x1280/products/11243/82546/fqwhtfolcrzku0g1x3iw__24774.1572473651.jpg?c=2"
+    },
+    {
+      "id": 2,
+      "name": "260ml Clip Lid Glass Jar",
+      "price": 1.00,
+      "img": "https://cdn11.bigcommerce.com/s-zg66sl1pxk/images/stencil/1280x1280/products/12046/51697/nfsnjdtsga9x0ajdtlxp__20788.1569537683.jpg?c=2"
+    },
+    {
+      "id": 3,
+      "name": "Mosaic Tub Medium",
+      "price": 4.00,
+      "img": "https://cdn11.bigcommerce.com/s-zg66sl1pxk/images/stencil/1280x1280/products/10529/49266/cdfpqwsvxuwkqkz5vo70__50637.1569536106.jpg?c=2"
+    },
+    {
+      "id": 4,
+      "name": "Round Wax Melt Burner",
+      "price": 3.00,
+      "img": "https://cdn11.bigcommerce.com/s-zg66sl1pxk/images/stencil/1280x1280/products/10860/82398/qall71ggdgmbe1c6a7im__80453.1572473579.jpg?c=2&imbypass=on"
+    },
+    {
+      "id": 5,
+      "name": "Kira Cushion",
+      "price": 3.00,
+      "img": "https://cdn11.bigcommerce.com/s-zg66sl1pxk/images/stencil/1280x1280/products/10201/82056/zycfv0kgbfkj9hobah4s__97039.1572473424.jpg?c=2&imbypass=on"
+    },
+    {
+      "id": 6,
+      "name": "Decorative Bamboo Ladder",
+      "price": 19.00,
+      "img": "https://cdn11.bigcommerce.com/s-zg66sl1pxk/images/stencil/1280x1280/products/9844/81854/s20skxkdpwxah8oxfbqj__12348.1572473329.jpg?c=2"
+    },
+    {
+      "id": 7,
+      "name": "Mini Pot with Stand",
+      "price": 4.00,
+      "img": "https://cdn11.bigcommerce.com/s-zg66sl1pxk/images/stencil/1280x1280/products/11871/203412/xfmeomskwexienagh7fp__34082.1581816904.jpg?c=2&imbypass=on"
+    },
+    {
+      "id": 8,
+      "name": "Short Sleeve Printed Tee",
+      "price": 2.00,
+      "img": "https://cdn11.bigcommerce.com/s-zg66sl1pxk/images/stencil/1280x1280/products/17157/109024/ihizrguduvdjwhgdx34c__00365.1574906600.jpg?c=2&imbypass=on"
+    },
+    {
+      "id": 9,
+      "name": "18 Piece Magnetic Tiles Set",
+      "price": 8.00,
+      "img": "https://cdn11.bigcommerce.com/s-zg66sl1pxk/images/stencil/1280x1280/products/16175/93959/vrtcpo8xrsb3xe78icwo__36762.1573164387.jpg?c=2&imbypass=on"
+    },
+    {
+      "id": 10,
+      "name": "Plush Top Pet Bed",
+      "price": 15.00,
+      "img": "https://cdn11.bigcommerce.com/s-zg66sl1pxk/images/stencil/1280x1280/products/10860/82398/qall71ggdgmbe1c6a7im__80453.1572473579.jpg?c=2&imbypass=on"
+    }
+  ]
+}
